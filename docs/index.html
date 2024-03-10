@@ -1,1 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode - The World's Leading Online Programming Learning Platform</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link type="text/css" href="/static/font-awesome/css/font-awesome.min.css?cache_version=2" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .names{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 190px;
+        }
+        #logo{
+            height: 40px;
+        }
+        .container{
+            background: linear-gradient(to right, rgb(62, 72, 87), rgb(55, 55, 56), rgb(34, 34, 34));
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
 
+        .container::before{
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            background-color: transparent;
+            width: 0;
+            height: 0;
+            border-left: 0px solid transparent;
+            border-right: 1815px solid transparent;
+            border-bottom: 332px solid white;
+        }
+        body{
+            overflow: hidden;
+            /* background: rgb(34, 34, 34); */
+            /* background: linear-gradient(to right, rgb(55, 55, 56), rgb(34, 34, 34)); */
+        }
+        #name{
+            margin-left: 10px;
+            font-family: TypoRound, sans-serif;
+            color: white;
+            font-weight: 400;
+            font-size: 25px;
+        }
+        .bar{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin: 20px auto;
+            align-items: center;
+        }
+        .navbar{
+            position: absolute;
+            right: 180px;
+        }
+        .navbar ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .navbar ul li{
+            list-style: none;
+            margin: 0px 2px;
+        }
+        .navbar ul li a{
+            list-style: none;
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+            font-weight: 200;
+            font-size: 15px;
+            border-radius: 50px;
+            transition: all 0.4s;
+        }
+        #explore{
+            color: #ffa116;
+            transition: all 0.4s;
+        }
+
+        .navbar ul li a:hover{
+            color: rgb(34, 34, 34);
+            background-color: white;
+            transition: all 0.4s;
+        }
+
+        #explore:hover{
+            color: rgb(34, 34, 34);
+            background-color: #ffa116;
+        }
+
+        #middle{
+            width: 414px;
+            height: 284px;
+            border-radius: 30px;
+            transform: rotate(-8deg);
+            margin-left: -20px;
+            margin-top: 30px;
+            margin-right: 150px;
+        }
+
+        .mid{
+            margin: 90px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .description{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        #quotation{
+            font-size: 40px;
+            font-weight: 500;
+            margin-top: 40px;
+        }
+
+        #desc{
+            margin-top: 38px;
+            opacity: 0.5;
+            font-weight: 400;
+            width: 500px;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 1.9em;
+            letter-spacing: 0.03em;
+            text-align: center;
+        }
+
+        #signup{
+            padding: 10px 15px;
+            border-radius: 50px;
+            color: white;
+            background-color: #1da09c;
+            border: none;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            font-size: 13px;
+            margin: 30px 20px;
+        }
+
+        #signup:hover{
+            background-color: #17807d;
+            transition: all 0.4s ease-in-out;
+        }
+
+        #signup:focus{
+            outline: none;
+        }
+
+        #signup a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="bar">
+                <div class="names">
+                    <img src="leetcode1.png" alt="Logo" id="logo">
+                    <h1 id="name">LeetCode</h1>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#" id="explore">Premium</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Developer</a></li>
+                        <li><a href="page02.html">Sign in</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="mid">
+            <img src="middle.png" alt="middle image" id="middle">
+            <div class="description">
+                <h1 id="quotation">A New Way to Learn</h1>
+                <p id="desc">LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews.</p>
+                <button id="signup"><a href="page03.html">Create Account &nbsp; <span>></span></a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
