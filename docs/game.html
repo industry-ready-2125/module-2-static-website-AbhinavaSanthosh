@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>game</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="home"><button class="hbtn">Home</button></a>
+    <div class="container0">
+      <p>your's</p>
+      <p>system's</p>
+    </div>
+    <div class="container1">
+      <img src="rock.png" alt="" id="myimg">
+      <img src="paper.png" alt="" id="sysimg">
+    </div>
+    <div class="container2">
+      <h1>choose your knock...!</h1>
+      <button class="rbtn" id="rbtn" onclick="fun1()" >rock</button>
+      <button class="pbtn" id="pbtn" onclick="fun2()">paper</button>
+      <button class="sbtn" id="sbtn" onclick="fun3()">scissors</button>
+    </div>
+    <div class="conatiner3">
+      <div class="sub1">
+        <h2>your score</h2>
+        <label for="" id="mysc">0</label>
+      </div>
+      <div class="sub2">
+        <h3>systems score</h3>
+        <label for="" id="syssc">0</label>
+      </div>
+    </div>
+    <button class="rstbtn" id="rstbtn" onclick="fun4()">reset</button>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
